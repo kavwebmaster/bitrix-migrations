@@ -34,7 +34,7 @@ class InstallCommand extends AbstractCommand
         $this->table = $table;
         $this->database = $database;
 
-        parent::__construct($name);
+        parent::__construct($name?:$this::$defaultName);
     }
 
     /**

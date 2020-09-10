@@ -27,7 +27,7 @@ class TemplatesCommand extends AbstractCommand
     {
         $this->collection = $collection;
 
-        parent::__construct($name);
+        parent::__construct($name?:$this::$defaultName);
     }
 
     /**

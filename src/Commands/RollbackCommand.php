@@ -27,7 +27,7 @@ class RollbackCommand extends AbstractCommand
     {
         $this->migrator = $migrator;
 
-        parent::__construct($name);
+        parent::__construct($name?:$this::$defaultName);
     }
 
     /**
